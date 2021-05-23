@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+    .title {
+      text-align: center;
+      color: aquamarine;
+      font-family: "Roboto", sans-serif;
+      padding-bottom: 125px;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+    .bg {
+      background-color: rgb(5, 104, 161);
+    }
+    .button {
+      font-family: "Roboto", sans-serif;
+      padding: 12px;
+      font-size: 15px;
+    }
+    .dotted {
+      border-style: dotted;
+    }
+    .copyright_info{
+      text-align: right;
+    }

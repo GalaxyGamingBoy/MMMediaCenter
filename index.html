@@ -5,62 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MM Media Center</title>
-    <script defer>
-        function f2021517()
-        {
-            console.log("Transporting to webpage")
-            window.location.replace("https://www.dropbox.com/s/soqxdnrfc45mpnt/%CE%A0%CF%81%CE%BF%CF%84%CE%AC%CF%83%CE%B5%CE%B9%CF%82%2017.mp3?dl=1");
-        }
-        function f2021517d()
-        {
-            console.log("Transporting to webpage")
-            window.location.replace("https://www.dropbox.com/s/f6yo7thh56bbcwj/2021-5-17%20%CE%A0%CF%81%CE%BF%CF%84%CE%AC%CF%83%CE%B5%CE%B9%CF%82%20RD.mp3?dl=1");
-        }
-        function f2021521()
-        {
-            console.log("Transporting to webpage")
-            window.location.replace("https://www.dropbox.com/s/e7cu3wprv5iylp4/2021-5-21%20%CE%A0%CF%81%CE%BF%CF%84%CE%AC%CF%83%CE%B5%CE%B9%CF%82.mp3?dl=1");
-        }
-        console.log("MM Media Center Loaded")
-    </script>
+
+    <script src="./js/index.js" defer></script>
+    
+    <link rel="stylesheet" href="./css/index.css">
   </head>
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
-    .title {
-      text-align: center;
-      color: aquamarine;
-      font-family: "Roboto", sans-serif;
-      padding-bottom: 125px;
-      text-decoration: underline;
-      font-weight: bold;
-    }
-    .bg {
-      background-color: rgb(5, 104, 161);
-    }
-    .button {
-      font-family: "Roboto", sans-serif;
-      padding: 12px;
-      font-size: 15px;
-    }
-  </style>
   <body class="bg">
     <h1 class="title">MM Media Center</h1>
     <div>
       <!--
         17.5.2021
       -->
-      <div style="border-style: dotted;">
-        <button class="button" id="b1" onclick="f2021517()">Προτάσεις - 17.5.2021</button>
-        <button class="button" id="b1" onclick="f2021517d()">Προτάσεις - 17.5.2021 - Διόρθωσεις</button>
+      <div class="dotted">
+        <button class="button" id="f20210517">Προτάσεις - 17.5.2021</button>
+        <button class="button" id="f20210517_r">Προτάσεις - 17.5.2021 - Διόρθωσεις</button>
       </div>
+
       <br>
       <!--
         21.5.2021
       -->
-      <div style="border-style: dotted;">
-        <button class="button" id="b1" onclick="f2021521()">Προτάσεις - 21.5.2021</button>
+      <div class="dotted">
+        <button class="button" id="f20210521">Προτάσεις - 21.5.2021</button>
       </div>
+      <br>
+      
     </div>
-    <p style="text-align: right;">&#169 Marios Mitsios / 2021 - 2021</p>
+    <p class="copyright_info">&#169 Marios Mitsios / 2021 - 2021</p>
   </body>
 </html>
