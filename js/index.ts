@@ -1,7 +1,8 @@
 // Variables IDS
 const f20210517_button = document.getElementById("f20210517") as HTMLButtonElement;
 const f20210517_button_r = document.getElementById("f20210517_r") as HTMLButtonElement;
-const f20210521_button = document.getElementById("f20210221") as HTMLButtonElement;
+const f20210521_button = document.getElementById("f20210521") as HTMLButtonElement;
+const form_button = document.getElementById("form") as HTMLButtonElement;
 
 function getCurrentTime(){
     var CurrentYear :String = new Date().getFullYear().toString();
@@ -33,5 +34,10 @@ f20210521_button.addEventListener('click', ()=>{
     getCurrentTime();
     window.location.replace("https://www.dropbox.com/s/e7cu3wprv5iylp4/2021-5-21%20%CE%A0%CF%81%CE%BF%CF%84%CE%AC%CF%83%CE%B5%CE%B9%CF%82.mp3?dl=1");
 })
+form_button.addEventListener('click', ()=>{
+    console.log("Form Button Clicked");
+    getCurrentTime();
+    window.open("https://forms.gle/EZXx7JNGo5r7z63dA", '_blank');
+})
 console.log("200");
-console.log("MMEdia Center Finished Loading JS, TS, CSS, HTML Successfully");
+console.log("MMedia Center Finished Loading JS, TS, CSS, HTML Successfully");

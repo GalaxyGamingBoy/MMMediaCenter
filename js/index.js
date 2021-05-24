@@ -1,7 +1,8 @@
 // Variables IDS
 var f20210517_button = document.getElementById("f20210517");
 var f20210517_button_r = document.getElementById("f20210517_r");
-var f20210521_button = document.getElementById("f20210221");
+var f20210521_button = document.getElementById("f20210521");
+var form_button = document.getElementById("form");
 function getCurrentTime() {
     var CurrentYear = new Date().getFullYear().toString();
     var CurrentMonth = new Date().getMonth().toString();
@@ -32,5 +33,10 @@ f20210521_button.addEventListener('click', function () {
     getCurrentTime();
     window.location.replace("https://www.dropbox.com/s/e7cu3wprv5iylp4/2021-5-21%20%CE%A0%CF%81%CE%BF%CF%84%CE%AC%CF%83%CE%B5%CE%B9%CF%82.mp3?dl=1");
 });
+form_button.addEventListener('click', function () {
+    console.log("Form Button Clicked");
+    getCurrentTime();
+    window.open("https://forms.gle/EZXx7JNGo5r7z63dA", '_blank');
+});
 console.log("200");
-console.log("MMEdia Center Finished Loading JS, TS, CSS, HTML Successfully");
+console.log("MMedia Center Finished Loading JS, TS, CSS, HTML Successfully");

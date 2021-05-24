@@ -55,8 +55,8 @@
       color:#000;
       background:#ffc;
       display:block;
-      height:20em;
-      width:20em;
+      height:22em;
+      width:22em;
       padding:1em;
     }
     ul li{
@@ -71,4 +71,7 @@
     }
     .notes_title{
       font-size: 42px;
+    }
+    .right_align{
+      text-align: right;
     }
