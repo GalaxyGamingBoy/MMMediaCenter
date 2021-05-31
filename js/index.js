@@ -46,7 +46,7 @@ f20210521_button.addEventListener("click", function () {
 f20210528_button.addEventListener("click", function () {
     console.log("Clicked On 2021.05.28");
     getCurrentTime();
-    window.location.replace("https://www.dropbox.com/s/8fcfb9g82t4woue/2021-5-28%20%CE%A0%CF%81%CE%BF%CF%84%CE%AC%CF%83%CE%B5%CE%B9%CF%82.mp3?dl=1?token=AMUYX7MTUMM4K42KK6VB343AWDW5A");
+    window.location.replace("https://www.dropbox.com/s/8fcfb9g82t4woue/2021-5-28%20%CE%A0%CF%81%CE%BF%CF%84%CE%AC%CF%83%CE%B5%CE%B9%CF%82.mp3?dl=1");
 });
 f20210531_button.addEventListener("click", function () {
     console.log("Clicked On 2021.05.31");
