@@ -11,6 +11,9 @@ const f20210521_button = document.getElementById(
 const f20210528_button = document.getElementById(
   "f20210528"
 ) as HTMLButtonElement;
+const f20210531_button = document.getElementById(
+  "f20210531"
+) as HTMLButtonElement;
 const form_button = document.getElementById("form") as HTMLButtonElement;
 
 function getCurrentTime() {
@@ -61,9 +64,17 @@ f20210528_button.addEventListener("click", () => {
   console.log("Clicked On 2021.05.28");
   getCurrentTime();
   window.location.replace(
-    "https://raw.githubusercontent.com/GalaxyGamingBoy/MMMediaCenter/master/Sentences/2021-5-28%20%CE%A0%CF%81%CE%BF%CF%84%CE%AC%CF%83%CE%B5%CE%B9%CF%82.mp3?token=AMUYX7MTUMM4K42KK6VB343AWDW5A"
+    "https://www.dropbox.com/s/8fcfb9g82t4woue/2021-5-28%20%CE%A0%CF%81%CE%BF%CF%84%CE%AC%CF%83%CE%B5%CE%B9%CF%82.mp3?dl=1?token=AMUYX7MTUMM4K42KK6VB343AWDW5A"
   );
 });
+f20210531_button.addEventListener("click", () => {
+  console.log("Clicked On 2021.05.31");
+  getCurrentTime();
+  window.location.replace(
+    "https://www.dropbox.com/s/mrgj485xx0to6tq/2021-5-31%20%CE%A0%CF%81%CE%BF%CF%84%CE%AC%CF%83%CE%B5%CE%B9%CF%82.mp3?dl=1"
+  );
+});
+
 form_button.addEventListener("click", () => {
   console.log("Form Button Clicked");
   getCurrentTime();
