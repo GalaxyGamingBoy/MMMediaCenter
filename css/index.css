@@ -1,77 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pattaya&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
-    .title {
-      text-align: center;
-      color: aquamarine;
-      font-family: "Roboto", sans-serif;
-      padding-bottom: 125px;
-      text-decoration: underline;
-      font-weight: bold;
-      font-family: 'Courgette', cursive;
-    }
-    .bg {
-      background-color: rgb(5, 104, 161);
-    }
-    .button {
-      font-family: "Roboto", sans-serif;
-      padding: 12px;
-      font-size: 15px;
-    }
-    .dotted {
-      border-style: dotted;
-    }
-    .copyright_info{
-      text-align: right;
-    }
-    body {
-      margin: 20px auto;
-      font-family: 'Lato';
-      background:#666;
-      color:#fff;
-    }
-     
-    h2 {
-      font-weight: bold;
-      font-size: 2rem;
-    }
-     
-    p {
-      font-size: 1rem;
-      font-weight: normal;
-    }
-     
-    ul,li{
-      list-style:none;
-    }
-    ul{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    ul li a{
-      text-decoration:none;
-      color:#000;
-      background:#ffc;
-      display:block;
-      height:25em;
-      width:22em;
-      padding:1em;
-    }
-    ul li{
-      text-align: center;
-    }
-    .left_align{
-      text-align: left;
-    }
-    .notes{
-      font-size: 20px;
-      font-family: 'Alegreya';
-    }
-    .notes_title{
-      font-size: 42px;
-    }
-    .right_align{
-      text-align: right;
-    }
+.title {
+  text-align: center;
+  color: aquamarine;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 125px;
+  text-decoration: underline;
+  font-weight: bold;
+  font-family: "Courgette", cursive;
+}
+.bg {
+  background-image: url("./BG.png");
+  background-size: cover;
+}
+.button {
+  font-family: "Roboto", sans-serif;
+  padding: 12px;
+  font-size: 15px;
+}
+.dotted {
+  border-style: dotted;
+}
+.copyright_info {
+  text-align: right;
+}
+body {
+  margin: 20px auto;
+  font-family: "Lato";
+  background: #666;
+  color: #fff;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+ul,
+li {
+  list-style: none;
+}
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+ul li a {
+  text-decoration: none;
+  color: #000;
+  background: #ffc;
+  display: block;
+  height: 25em;
+  width: 22em;
+  padding: 1em;
+}
+ul li {
+  text-align: center;
+}
+.left_align {
+  text-align: left;
+}
+.notes {
+  font-size: 20px;
+  font-family: "Alegreya";
+}
+.notes_title {
+  font-size: 42px;
+}
+.right_align {
+  text-align: right;
+}
+.ButtonBG {
+}
