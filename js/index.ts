@@ -14,9 +14,13 @@ const f20210528_button = document.getElementById(
 const f20210531_button = document.getElementById(
   "f20210531"
 ) as HTMLButtonElement;
+const f20210607_button = document.getElementById(
+  "f20210607"
+) as HTMLButtonElement;
 const form_button = document.getElementById("form") as HTMLButtonElement;
 const github_button = document.getElementById("github") as HTMLButtonElement;
 const gsheets_button = document.getElementById("gsheets") as HTMLButtonElement;
+const fof_button = document.getElementById("404") as HTMLButtonElement;
 
 function getCurrentTime() {
   var CurrentYear: String = new Date().getFullYear().toString();
@@ -77,6 +81,13 @@ f20210531_button.addEventListener("click", () => {
   );
 });
 
+f20210607_button.addEventListener("click", () => {
+  console.log("Clicked On 2021.06.07");
+  getCurrentTime();
+  window.open(
+    "https://github.com/GalaxyGamingBoy/MMMediaCenter/blob/master/Sentences/2021-6-7%20%CE%A0%CF%81%CE%BF%CF%84%CE%AC%CF%83%CE%B5%CE%B9%CF%82.mp3"
+  );
+});
 form_button.addEventListener("click", () => {
   console.log("Form Button Clicked");
   getCurrentTime();
@@ -97,5 +108,10 @@ gsheets_button.addEventListener("click", () => {
   );
 });
 
+fof_button.addEventListener("click", () => {
+  console.log("404 Error Button Pressed");
+  getCurrentTime();
+  window.location.replace("https://mmmedia.netlify.app/404");
+});
 console.log("200");
 console.log("MMedia Center Finished Loading JS, TS, CSS, HTML Successfully");

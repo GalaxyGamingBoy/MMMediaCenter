@@ -4,9 +4,11 @@ var f20210517_button_r = document.getElementById("f20210517_r");
 var f20210521_button = document.getElementById("f20210521");
 var f20210528_button = document.getElementById("f20210528");
 var f20210531_button = document.getElementById("f20210531");
+var f20210607_button = document.getElementById("f20210607");
 var form_button = document.getElementById("form");
 var github_button = document.getElementById("github");
 var gsheets_button = document.getElementById("gsheets");
+var fof_button = document.getElementById("404");
 function getCurrentTime() {
     var CurrentYear = new Date().getFullYear().toString();
     var CurrentMonth = new Date().getMonth().toString();
@@ -55,6 +57,11 @@ f20210531_button.addEventListener("click", function () {
     getCurrentTime();
     window.location.replace("https://www.dropbox.com/s/mrgj485xx0to6tq/2021-5-31%20%CE%A0%CF%81%CE%BF%CF%84%CE%AC%CF%83%CE%B5%CE%B9%CF%82.mp3?dl=1");
 });
+f20210607_button.addEventListener("click", function () {
+    console.log("Clicked On 2021.06.07");
+    getCurrentTime();
+    window.open("https://github.com/GalaxyGamingBoy/MMMediaCenter/blob/master/Sentences/2021-6-7%20%CE%A0%CF%81%CE%BF%CF%84%CE%AC%CF%83%CE%B5%CE%B9%CF%82.mp3");
+});
 form_button.addEventListener("click", function () {
     console.log("Form Button Clicked");
     getCurrentTime();
@@ -69,6 +76,11 @@ gsheets_button.addEventListener("click", function () {
     console.log("Google Sheets Button Pressed");
     getCurrentTime();
     window.open("https://docs.google.com/spreadsheets/d/1WYLmV6T4GBQ9QkEKuRTZvv52yU9ZMunT_wvpL_mSMgE/edit?usp=sharing");
+});
+fof_button.addEventListener("click", function () {
+    console.log("404 Error Button Pressed");
+    getCurrentTime();
+    window.location.replace("https://mmmedia.netlify.app/404");
 });
 console.log("200");
 console.log("MMedia Center Finished Loading JS, TS, CSS, HTML Successfully");
