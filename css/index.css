@@ -12,7 +12,7 @@
   font-family: "Courgette", cursive;
 }
 .bg {
-  background-image: url("./BG.png");
+  background-image: url("./BG_C.png");
   background-size: cover;
 }
 .button {
@@ -57,7 +57,7 @@ ul li a {
   color: #000;
   background: #ffc;
   display: block;
-  height: 25em;
+  height: 28em;
   width: 22em;
   padding: 1em;
 }

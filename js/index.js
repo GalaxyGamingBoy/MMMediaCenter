@@ -5,6 +5,8 @@ var f20210521_button = document.getElementById("f20210521");
 var f20210528_button = document.getElementById("f20210528");
 var f20210531_button = document.getElementById("f20210531");
 var form_button = document.getElementById("form");
+var github_button = document.getElementById("github");
+var gsheets_button = document.getElementById("gsheets");
 function getCurrentTime() {
     var CurrentYear = new Date().getFullYear().toString();
     var CurrentMonth = new Date().getMonth().toString();
@@ -57,6 +59,16 @@ form_button.addEventListener("click", function () {
     console.log("Form Button Clicked");
     getCurrentTime();
     window.open("https://forms.gle/EZXx7JNGo5r7z63dA", "_blank");
+});
+github_button.addEventListener("click", function () {
+    console.log("GitHub Button Clicked");
+    getCurrentTime();
+    window.open("https://github.com/GalaxyGamingBoy/MMMediaCenter");
+});
+gsheets_button.addEventListener("click", function () {
+    console.log("Google Sheets Button Pressed");
+    getCurrentTime();
+    window.open("https://docs.google.com/spreadsheets/d/1WYLmV6T4GBQ9QkEKuRTZvv52yU9ZMunT_wvpL_mSMgE/edit?usp=sharing");
 });
 console.log("200");
 console.log("MMedia Center Finished Loading JS, TS, CSS, HTML Successfully");

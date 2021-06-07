@@ -15,6 +15,8 @@ const f20210531_button = document.getElementById(
   "f20210531"
 ) as HTMLButtonElement;
 const form_button = document.getElementById("form") as HTMLButtonElement;
+const github_button = document.getElementById("github") as HTMLButtonElement;
+const gsheets_button = document.getElementById("gsheets") as HTMLButtonElement;
 
 function getCurrentTime() {
   var CurrentYear: String = new Date().getFullYear().toString();
@@ -80,5 +82,20 @@ form_button.addEventListener("click", () => {
   getCurrentTime();
   window.open("https://forms.gle/EZXx7JNGo5r7z63dA", "_blank");
 });
+
+github_button.addEventListener("click", () => {
+  console.log("GitHub Button Clicked");
+  getCurrentTime();
+  window.open("https://github.com/GalaxyGamingBoy/MMMediaCenter");
+});
+
+gsheets_button.addEventListener("click", () => {
+  console.log("Google Sheets Button Pressed");
+  getCurrentTime();
+  window.open(
+    "https://docs.google.com/spreadsheets/d/1WYLmV6T4GBQ9QkEKuRTZvv52yU9ZMunT_wvpL_mSMgE/edit?usp=sharing"
+  );
+});
+
 console.log("200");
 console.log("MMedia Center Finished Loading JS, TS, CSS, HTML Successfully");
