@@ -5,6 +5,7 @@ var f20210521_button = document.getElementById("f20210521");
 var f20210528_button = document.getElementById("f20210528");
 var f20210531_button = document.getElementById("f20210531");
 var f20210607_button = document.getElementById("f20210607");
+var notes_date = document.getElementById("notes_date");
 var form_button = document.getElementById("form");
 var github_button = document.getElementById("github");
 var gsheets_button = document.getElementById("gsheets");
@@ -32,6 +33,17 @@ function getCurrentTime() {
     var UnixTimestamp = new Date().getTime().toString();
     console.log("Unix Timestampt: ".concat(UnixTimestamp.toString()));
 }
+window.onload = function () {
+    var CurrentYear = new Date().getFullYear().toString();
+    var CurrentMonth = new Date().getMonth().toString();
+    var CurrentDay = new Date().getDate().toString();
+    var CurrentDate = "-"
+        .concat(CurrentDay.concat("."))
+        .concat(CurrentMonth.toString())
+        .concat(".")
+        .concat(CurrentYear.toString());
+    notes_date.innerHTML = CurrentDate.toString();
+};
 f20210517_button.addEventListener("click", function () {
     console.log("Clicked On 2021.05.17");
     getCurrentTime();

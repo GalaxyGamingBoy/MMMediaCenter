@@ -17,6 +17,8 @@ const f20210531_button = document.getElementById(
 const f20210607_button = document.getElementById(
   "f20210607"
 ) as HTMLButtonElement;
+
+const notes_date = document.getElementById("notes_date");
 const form_button = document.getElementById("form") as HTMLButtonElement;
 const github_button = document.getElementById("github") as HTMLButtonElement;
 const gsheets_button = document.getElementById("gsheets") as HTMLButtonElement;
@@ -45,6 +47,17 @@ function getCurrentTime() {
   var UnixTimestamp: String = new Date().getTime().toString();
   console.log("Unix Timestampt: ".concat(UnixTimestamp.toString()));
 }
+window.onload = () => {
+  var CurrentYear: String = new Date().getFullYear().toString();
+  var CurrentMonth: String = new Date().getMonth().toString();
+  var CurrentDay: String = new Date().getDate().toString();
+  var CurrentDate: String = "-"
+    .concat(CurrentDay.concat("."))
+    .concat(CurrentMonth.toString())
+    .concat(".")
+    .concat(CurrentYear.toString());
+  notes_date.innerHTML = CurrentDate.toString();
+};
 f20210517_button.addEventListener("click", () => {
   console.log("Clicked On 2021.05.17");
   getCurrentTime();
