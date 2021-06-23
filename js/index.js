@@ -47,32 +47,32 @@ window.onload = function () {
 f20210517_button.addEventListener("click", function () {
     console.log("Clicked On 2021.05.17");
     getCurrentTime();
-    window.location.replace("https://www.dropbox.com/s/soqxdnrfc45mpnt/%CE%A0%CF%81%CE%BF%CF%84%CE%AC%CF%83%CE%B5%CE%B9%CF%82%2017.mp3?dl=1");
+    window.location.replace("https://galaxygamingboy.github.io/MMMediaCenter/404");
 });
 f20210517_button_r.addEventListener("click", function () {
     console.log("Clicked On 2021.05.17_r");
     getCurrentTime();
-    window.location.replace("https://www.dropbox.com/s/f6yo7thh56bbcwj/2021-5-17%20%CE%A0%CF%81%CE%BF%CF%84%CE%AC%CF%83%CE%B5%CE%B9%CF%82%20RD.mp3?dl=1");
+    window.location.replace("https://galaxygamingboy.github.io/MMMediaCenter/Sentences/2021.05.17RD.mp3");
 });
 f20210521_button.addEventListener("click", function () {
     console.log("Clicked On 2021.05.21");
     getCurrentTime();
-    window.location.replace("https://www.dropbox.com/s/e7cu3wprv5iylp4/2021-5-21%20%CE%A0%CF%81%CE%BF%CF%84%CE%AC%CF%83%CE%B5%CE%B9%CF%82.mp3?dl=1");
+    window.location.replace("https://galaxygamingboy.github.io/MMMediaCenter/Sentences/2021.05.21S.mp3");
 });
 f20210528_button.addEventListener("click", function () {
     console.log("Clicked On 2021.05.28");
     getCurrentTime();
-    window.location.replace("https://www.dropbox.com/s/8fcfb9g82t4woue/2021-5-28%20%CE%A0%CF%81%CE%BF%CF%84%CE%AC%CF%83%CE%B5%CE%B9%CF%82.mp3?dl=1");
+    window.location.replace("https://galaxygamingboy.github.io/MMMediaCenter/Sentences/2021.05.28S.mp3");
 });
 f20210531_button.addEventListener("click", function () {
     console.log("Clicked On 2021.05.31");
     getCurrentTime();
-    window.location.replace("https://www.dropbox.com/s/mrgj485xx0to6tq/2021-5-31%20%CE%A0%CF%81%CE%BF%CF%84%CE%AC%CF%83%CE%B5%CE%B9%CF%82.mp3?dl=1");
+    window.location.replace("https://galaxygamingboy.github.io/MMMediaCenter/Sentences/2021.05.31S.mp3");
 });
 f20210607_button.addEventListener("click", function () {
     console.log("Clicked On 2021.06.07");
     getCurrentTime();
-    window.open("https://github.com/GalaxyGamingBoy/MMMediaCenter/blob/master/Sentences/2021-6-7%20%CE%A0%CF%81%CE%BF%CF%84%CE%AC%CF%83%CE%B5%CE%B9%CF%82.mp3");
+    window.open("https://galaxygamingboy.github.io/MMMediaCenter/Sentences/2021.06.07S.mp3");
 });
 form_button.addEventListener("click", function () {
     console.log("Form Button Clicked");
@@ -92,7 +92,7 @@ gsheets_button.addEventListener("click", function () {
 fof_button.addEventListener("click", function () {
     console.log("404 Error Button Pressed");
     getCurrentTime();
-    window.location.replace("https://mmmedia.netlify.app/404");
+    window.location.replace("https://galaxygamingboy.github.io/MMMediaCenter/404");
 });
 console.log("200");
 console.log("MMedia Center Finished Loading JS, TS, CSS, HTML Successfully");
