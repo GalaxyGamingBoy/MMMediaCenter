@@ -49,7 +49,7 @@ function getCurrentTime() {
 }
 window.onload = () => {
   var CurrentYear: String = new Date().getFullYear().toString();
-  var CurrentMonth: String = new Date().getMonth().toString();
+  var CurrentMonth: String = ("0" + (new Date().getMonth() + 1)).slice(-2)
   var CurrentDay: String = new Date().getDate().toString();
   var CurrentDate: String = "-"
     .concat(CurrentDay.concat("."))
