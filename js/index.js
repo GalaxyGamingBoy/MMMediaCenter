@@ -10,9 +10,10 @@ var form_button = document.getElementById("form");
 var github_button = document.getElementById("github");
 var gsheets_button = document.getElementById("gsheets");
 var fof_button = document.getElementById("404");
+var gfolder_button = document.getElementById("gfolder");
 function getCurrentTime() {
     var CurrentYear = new Date().getFullYear().toString();
-    var CurrentMonth = new Date().getMonth().toString();
+    var CurrentMonth = ("0" + (new Date().getMonth() + 1)).slice(-2);
     var CurrentDay = new Date().getDate().toString();
     var CurrentDate = CurrentDay.concat("-")
         .concat(CurrentMonth.toString())
@@ -93,6 +94,11 @@ fof_button.addEventListener("click", function () {
     console.log("404 Error Button Pressed");
     getCurrentTime();
     window.location.replace("https://galaxygamingboy.github.io/MMMediaCenter/404");
+});
+gfolder_button.addEventListener("click", function () {
+    console.log("Going to google drive folder");
+    getCurrentTime();
+    window.location.replace("https://drive.google.com/drive/u/0/folders/1HtS2iIH4hvmCkSGvlNIGzvCpCx-p9oR5");
 });
 console.log("200");
 console.log("MMedia Center Finished Loading JS, TS, CSS, HTML Successfully");

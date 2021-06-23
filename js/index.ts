@@ -23,10 +23,11 @@ const form_button = document.getElementById("form") as HTMLButtonElement;
 const github_button = document.getElementById("github") as HTMLButtonElement;
 const gsheets_button = document.getElementById("gsheets") as HTMLButtonElement;
 const fof_button = document.getElementById("404") as HTMLButtonElement;
+const gfolder_button = document.getElementById("gfolder") as HTMLButtonElement;
 
 function getCurrentTime() {
   var CurrentYear: String = new Date().getFullYear().toString();
-  var CurrentMonth: String = new Date().getMonth().toString();
+  var CurrentMonth: String = ("0" + (new Date().getMonth() + 1)).slice(-2)
   var CurrentDay: String = new Date().getDate().toString();
   var CurrentDate: String = CurrentDay.concat("-")
     .concat(CurrentMonth.toString())
@@ -126,5 +127,11 @@ fof_button.addEventListener("click", () => {
   getCurrentTime();
   window.location.replace("https://galaxygamingboy.github.io/MMMediaCenter/404");
 });
+
+gfolder_button.addEventListener("click", () => {
+  console.log("Going to google drive folder");
+  getCurrentTime();
+  window.location.replace("https://drive.google.com/drive/u/0/folders/1HtS2iIH4hvmCkSGvlNIGzvCpCx-p9oR5");
+})
 console.log("200");
 console.log("MMedia Center Finished Loading JS, TS, CSS, HTML Successfully");
