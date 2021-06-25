@@ -17,6 +17,9 @@ const f20210531_button = document.getElementById(
 const f20210607_button = document.getElementById(
   "f20210607"
 ) as HTMLButtonElement;
+const f20210625_button = document.getElementById(
+  "f20210625"
+) as HTMLButtonElement;
 
 const notes_date = document.getElementById("notes_date");
 const form_button = document.getElementById("form") as HTMLButtonElement;
@@ -102,6 +105,14 @@ f20210607_button.addEventListener("click", () => {
     "https://galaxygamingboy.github.io/MMMediaCenter/Sentences/2021.06.07S.mp3"
   );
 });
+
+f20210625_button.addEventListener("click", () => {
+  console.log("Clicked On 2021.06.25");
+  getCurrentTime();
+  window.open(
+    "https://galaxygamingboy.github.io/MMMediaCenter/Sentences/2021.06.25S.mp3"
+  );
+});
 form_button.addEventListener("click", () => {
   console.log("Form Button Clicked");
   getCurrentTime();
@@ -131,7 +142,7 @@ fof_button.addEventListener("click", () => {
 gfolder_button.addEventListener("click", () => {
   console.log("Going to google drive folder");
   getCurrentTime();
-  window.location.replace("https://drive.google.com/drive/u/0/folders/1HtS2iIH4hvmCkSGvlNIGzvCpCx-p9oR5");
+  window.open("https://drive.google.com/drive/u/0/folders/1HtS2iIH4hvmCkSGvlNIGzvCpCx-p9oR5");
 })
 console.log("200");
 console.log("MMedia Center Finished Loading JS, TS, CSS, HTML Successfully");

@@ -5,6 +5,7 @@ var f20210521_button = document.getElementById("f20210521");
 var f20210528_button = document.getElementById("f20210528");
 var f20210531_button = document.getElementById("f20210531");
 var f20210607_button = document.getElementById("f20210607");
+var f20210625_button = document.getElementById("f20210625");
 var notes_date = document.getElementById("notes_date");
 var form_button = document.getElementById("form");
 var github_button = document.getElementById("github");
@@ -75,6 +76,11 @@ f20210607_button.addEventListener("click", function () {
     getCurrentTime();
     window.open("https://galaxygamingboy.github.io/MMMediaCenter/Sentences/2021.06.07S.mp3");
 });
+f20210625_button.addEventListener("click", function () {
+    console.log("Clicked On 2021.06.25");
+    getCurrentTime();
+    window.open("https://galaxygamingboy.github.io/MMMediaCenter/Sentences/2021.06.25S.mp3");
+});
 form_button.addEventListener("click", function () {
     console.log("Form Button Clicked");
     getCurrentTime();
@@ -98,7 +104,7 @@ fof_button.addEventListener("click", function () {
 gfolder_button.addEventListener("click", function () {
     console.log("Going to google drive folder");
     getCurrentTime();
-    window.location.replace("https://drive.google.com/drive/u/0/folders/1HtS2iIH4hvmCkSGvlNIGzvCpCx-p9oR5");
+    window.open("https://drive.google.com/drive/u/0/folders/1HtS2iIH4hvmCkSGvlNIGzvCpCx-p9oR5");
 });
 console.log("200");
 console.log("MMedia Center Finished Loading JS, TS, CSS, HTML Successfully");
