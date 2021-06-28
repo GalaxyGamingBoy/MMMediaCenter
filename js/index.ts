@@ -1,3 +1,4 @@
+const version: string = "1.1.0"
 // Variables IDS
 const f20210517_button = document.getElementById(
   "f20210517"
@@ -27,6 +28,7 @@ const github_button = document.getElementById("github") as HTMLButtonElement;
 const gsheets_button = document.getElementById("gsheets") as HTMLButtonElement;
 const fof_button = document.getElementById("404") as HTMLButtonElement;
 const gfolder_button = document.getElementById("gfolder") as HTMLButtonElement;
+const blog_button = document.getElementById("blog") as HTMLButtonElement;
 
 function getCurrentTime() {
   var CurrentYear: String = new Date().getFullYear().toString();
@@ -144,5 +146,13 @@ gfolder_button.addEventListener("click", () => {
   getCurrentTime();
   window.open("https://drive.google.com/drive/u/0/folders/1HtS2iIH4hvmCkSGvlNIGzvCpCx-p9oR5");
 })
+
+blog_button.addEventListener("click", () => {
+  console.log("Going to Blog Site");
+  getCurrentTime();
+  window.open("https://mmmediablogsite.blogspot.com/");
+})
+
 console.log("200");
 console.log("MMedia Center Finished Loading JS, TS, CSS, HTML Successfully");
+console.log(`TS/JS Version: ${version}`)

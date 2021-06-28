@@ -1,3 +1,4 @@
+var version = "1.1.0";
 // Variables IDS
 var f20210517_button = document.getElementById("f20210517");
 var f20210517_button_r = document.getElementById("f20210517_r");
@@ -12,6 +13,7 @@ var github_button = document.getElementById("github");
 var gsheets_button = document.getElementById("gsheets");
 var fof_button = document.getElementById("404");
 var gfolder_button = document.getElementById("gfolder");
+var blog_button = document.getElementById("blog");
 function getCurrentTime() {
     var CurrentYear = new Date().getFullYear().toString();
     var CurrentMonth = ("0" + (new Date().getMonth() + 1)).slice(-2);
@@ -106,5 +108,11 @@ gfolder_button.addEventListener("click", function () {
     getCurrentTime();
     window.open("https://drive.google.com/drive/u/0/folders/1HtS2iIH4hvmCkSGvlNIGzvCpCx-p9oR5");
 });
+blog_button.addEventListener("click", function () {
+    console.log("Going to Blog Site");
+    getCurrentTime();
+    window.open("https://mmmediablogsite.blogspot.com/");
+});
 console.log("200");
 console.log("MMedia Center Finished Loading JS, TS, CSS, HTML Successfully");
+console.log("TS/JS Version: " + version);
